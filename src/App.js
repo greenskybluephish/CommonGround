@@ -1,28 +1,54 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import NavBar from "./components/nav/NavBar"
+import ApplicationViews from "./components/ApplicationViews"
+
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+    // state = {
+    //     filtered: {
+    //         owners: [],
+    //         employees: [],
+    //         locations: [],
+    //         animals: []
+    //     }
+    // }; 
+
+    
+    // searchButton = (search) => {
+
+    //     const newSearchState = {
+    //         filtered: {
+    
+    //         }
+    //     }
+        
+    //     fetch(`http://localhost:5002/owners/?q=${search}`)
+    //         .then(r => r.json())
+    //         .then(owners => newSearchState.filtered.owners = owners)
+    //         .then(() => fetch(`http://localhost:5002/employees/?q=${search}`)
+    //         .then(r => r.json()))
+    //         .then(employees => newSearchState.filtered.employees = employees)
+    //         .then(() => fetch(`http://localhost:5002/animals/?q=${search}`)
+    //         .then(r => r.json()))
+    //         .then(animals => newSearchState.filtered.animals = animals)
+    //         .then(() => fetch(`http://localhost:5002/locations/?q=${search}`)
+    //         .then(r => r.json()))
+    //         .then(locations => newSearchState.filtered.locations = locations)
+    //         .then(() => {
+            
+    //             this.setState(newSearchState)})
+    // }
+    
+    render() {
+        return (
+            <React.Fragment>
+                <NavBar />
+                <ApplicationViews />
+            </React.Fragment>
+        )
+    }
 }
 
-export default App;
+export default App
