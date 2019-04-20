@@ -42,11 +42,16 @@ export default {
         }
       }).then(res => res.json());
     },
-    JSONArtists(user) {
+    JSONArtistDetail(user) {
       return fetch(`${baseURL}/users/${user}/?_embed=artists`)
         .then(res => res.json())
         .then(userObject => userObject.artists[0].artistDetail);
     },
+    JSONArtistList(userId) {
+      return fetch(`${baseURL}/users/${userId}`)
+        .then(res => res.json()).then(userObject => userObject.artistList.split(","))
+      },
+
     JSONUsers() {
       return fetch(`${baseURL}/users`).then(res => res.json());
     }

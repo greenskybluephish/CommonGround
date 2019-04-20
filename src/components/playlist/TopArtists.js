@@ -12,7 +12,7 @@ export default class TopArtists extends Component {
   componentDidMount() {
     const userId = sessionStorage.getItem("userId");
 
-    API.get.JSONArtists(userId)
+    API.get.JSONArtistDetail(userId)
       .then(array => this.setState({ artists: array }));
   }
 

@@ -52,7 +52,7 @@ class NavBar extends Component {
                 <NavLink href="/topartists">Top Artists</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/share">Share</NavLink>
+                <NavLink href="/shared">Share</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/weather">Weather</NavLink>

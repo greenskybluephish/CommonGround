@@ -15,7 +15,7 @@ export default class Home extends Component {
   }
   render() {
     return <Container>
-    Hello {this.props.currentUser}
+    <h1>Hello {this.props.currentUser}</h1>
     </Container>;
   }
 }
