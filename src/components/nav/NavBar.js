@@ -3,7 +3,6 @@ import "./NavBar.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import {
     Collapse,
-
     Navbar,
     NavbarToggler,
     NavbarBrand,
@@ -14,7 +13,7 @@ import {
     // Row,
     // Col,
     // Jumbotron,
-    // Button
+    Button
 } from 'reactstrap';
 
 class NavBar extends Component {
@@ -28,18 +27,10 @@ class NavBar extends Component {
      }
    
      handleSubmit = (event) => {
-       event.preventDefault();
-       this.props.searches(this.state.value);
-       if(event.type === "click") {
-           let form = event.target.parentNode.parentNode
-           form.reset();
-       } else {
-       let form = event.target
-       form.reset();
-       }
+       sessionStorage.clear();   
      }
     
-    toggle() {
+    toggle = () => {
         this.setState({
             isOpen: !this.state.isOpen
         });
@@ -55,7 +46,7 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
           <Nav navbar>
           <NavItem>
-                <NavLink href="/home">Home</NavLink>
+                <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/topartists">Top Artists</NavLink>
@@ -66,13 +57,9 @@ class NavBar extends Component {
               <NavItem>
                 <NavLink href="/weather">Weather</NavLink>
               </NavItem>
-                   {/* <Form onSubmit={this.handleSubmit} className="form-inline my-2 my-lg-0">
-                   <label>
-                   Search:
-                   <input type="text" onChange={this.handleChange} className="form-control mr-sm-2" />
-                       </label>
-                   <Button  onClick={this.handleSubmit} value="Submit">Search</Button>
-                   </Form>  */}
+              <NavItem>
+                   <NavLink onClick={this.handleSubmit} href="/login">Log Out</NavLink>
+              </NavItem>
                </Nav>
                </Collapse>
            </Navbar>

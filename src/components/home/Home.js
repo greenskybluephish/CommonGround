@@ -1,22 +1,21 @@
 import React, { Component } from "react";
 import "./home.css";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Container,
-  Row,
-  Col,
-  Jumbotron,
-  Button
+  Container
+
 } from "reactstrap";
+import API from "../../modules/APIManager"
+
+
 
 export default class Home extends Component {
+
+  componentDidMount() {
+
+  }
   render() {
-    return <Container>Hello</Container>;
+    return <Container>
+    Hello {this.props.currentUser}
+    </Container>;
   }
 }

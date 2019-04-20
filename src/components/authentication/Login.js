@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-social/bootstrap-social.css';
 import { Button, Container } from 'reactstrap';
 import "./login.css"
+// import API from "../../modules/APIManager"
 
 class Login extends Component {
 
@@ -23,17 +24,11 @@ class Login extends Component {
     e.preventDefault();
 
     // Initializes OAuth.io with API key
+    this.props.authenticateUser()
 
-    window.OAuth.initialize('rKtNmq0HtvZws6tMLOJFcXiyypo')
-    
-    window.OAuth.popup('spotify', {cache: true}).done(spotify => {
-    sessionStorage.setItem("access_token", spotify.access_token)
-    // do some stuff with result
-    spotify.me().then((data) => {
-        console.log("data: ", data);
-      });
-      this.props.history.push("/")
-  })}
+
+      this.props.history.push("/home")
+  }
 
   
 
