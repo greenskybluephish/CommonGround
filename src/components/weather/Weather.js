@@ -22,8 +22,8 @@ export default class Scanner extends Component {
   }
   render(){
     const previewStyle = {
-      height: 240,
-      width: 320,
+      height: 480,
+      width: 640,
     }
  
     return(
@@ -33,9 +33,9 @@ export default class Scanner extends Component {
           style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
-          facingMode={"rear"}
+          facingMode={"front"}
           />
-        <p>{this.state.result}</p>
+        <h2>{this.state.result}</h2>
       </div>
     )
   }
