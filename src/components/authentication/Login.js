@@ -15,8 +15,7 @@ class Login extends Component {
     oauthScript.src = "https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js";
 
     document.body.appendChild(oauthScript);
-    
-
+  
   }
 
   handleClick(e) {

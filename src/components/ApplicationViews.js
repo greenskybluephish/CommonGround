@@ -6,7 +6,7 @@ import Login from "./authentication/Login";
 import API from "../modules/APIManager";
 import "./applicationviews.css";
 import Shared from "./share/Shared"
-
+import Weather from "./weather/Weather"
 
 
 export default class ApplicationViews extends Component {
@@ -126,6 +126,17 @@ export default class ApplicationViews extends Component {
               return <Redirect to="/login" />;
             } else {
               return <TopArtists userId={this.state.userId} />;
+            }
+          }}
+        />
+                <Route
+          exact
+          path="/weather"
+          render={() => {
+            if (!this.isAuthenticated()) {
+              return <Redirect to="/login" />;
+            } else {
+              return <Weather userId={this.state.userId} />;
             }
           }}
         />

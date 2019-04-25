@@ -1,4 +1,4 @@
-const accessToken = window.sessionStorage.getItem("access_token");
+// const accessToken = window.sessionStorage.getItem("access_token");
 
 const remoteURL = "https://api.spotify.com/v1";
 const baseURL = "http://localhost:5002";

@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import "./home.css";
 import {
   Container
-
 } from "reactstrap";
-import API from "../../modules/APIManager"
+// import API from "../../modules/APIManager"
 
 
 

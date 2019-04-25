@@ -4,10 +4,13 @@ import { Container } from "reactstrap";
 import API from "../../modules/APIManager";
 import ArtistCard from "../artists/ArtistCard";
 
+
 export default class TopArtists extends Component {
   state = {
     artists: []
   };
+
+
 
   componentDidMount() {
     const userId = sessionStorage.getItem("userId");

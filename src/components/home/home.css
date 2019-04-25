@@ -10,13 +10,6 @@ h1 {
 }
 
 
-
-
-img {
-  width: 140px;
-  height: auto;
-}
-
 .login .container {
   display: flex;
   justify-content: flex-start;

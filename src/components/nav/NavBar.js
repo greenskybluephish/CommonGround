@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "./NavBar.css"
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 import {
     Collapse,
@@ -8,12 +9,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    // Container,
-    // Row,
-    // Col,
-    // Jumbotron,
-    Button
+    NavLink
 } from 'reactstrap';
 
 class NavBar extends Component {
@@ -41,24 +37,24 @@ class NavBar extends Component {
        return (
         <div>
            <Navbar color="#464EA3" dark expand="md">
-               <NavbarBrand href="/">Common Ground</NavbarBrand>
+               <NavbarBrand tag={Link} to="/">Common Ground</NavbarBrand>
                <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
           <Nav navbar>
           <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink tag={Link} to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/topartists">Top Artists</NavLink>
+                <NavLink tag={Link} to="/topartists">Top Artists</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/shared">Share</NavLink>
+                <NavLink tag={Link} to="/shared">Share</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/weather">Weather</NavLink>
+                <NavLink tag={Link} to="/weather">Weather</NavLink>
               </NavItem>
               <NavItem>
-                   <NavLink onClick={this.handleSubmit} href="/login">Log Out</NavLink>
+                   <NavLink onClick={this.handleSubmit} tag={Link} to="/login">Log Out</NavLink>
               </NavItem>
                </Nav>
                </Collapse>
