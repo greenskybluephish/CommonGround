@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
- 
+import "./weather.css"
+
 export default class Scanner extends Component {
   constructor(props){
     super(props)
