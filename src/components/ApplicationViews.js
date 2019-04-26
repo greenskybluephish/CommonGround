@@ -14,7 +14,8 @@ export default class ApplicationViews extends Component {
     isLoggedIn: false,
     allUsers: [],
     currentUser: [],
-    userId: []
+    userId: [],
+    secondUser: ""
   };
 
   isAuthenticated = () => sessionStorage.getItem("access_token") !== null;
@@ -35,6 +36,13 @@ export default class ApplicationViews extends Component {
       });
     }
   }
+
+  secondUserAdd = (id) => {
+    this.setState({secondUser: id})
+    this.props.history.push("/shared")
+  }
+
+
 
   authenticateUser = () => {
     window.OAuth.initialize("rKtNmq0HtvZws6tMLOJFcXiyypo");
@@ -136,7 +144,7 @@ export default class ApplicationViews extends Component {
             if (!this.isAuthenticated()) {
               return <Redirect to="/login" />;
             } else {
-              return <Weather userId={this.state.userId} />;
+              return <Weather userId={this.state.userId} secondUserAdd={this.secondUserAdd}/>;
             }
           }}
         />
@@ -147,7 +155,7 @@ export default class ApplicationViews extends Component {
             if (!this.isAuthenticated()) {
               return <Redirect to="/login" />;
             } else {
-              return <Shared userId={this.state.userId} />;
+              return <Shared userId={this.state.userId} secondUser={this.state.secondUser}/>;
             }
           }}
         />

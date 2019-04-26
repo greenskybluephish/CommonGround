@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
-import { Route } from "react-router-dom";
-import Shared from "../share/Shared"
-
+ 
 export default class Scanner extends Component {
 
   state = {
       delay: false,
-      result: ""
+      result: "",
     }
  
 
@@ -19,12 +17,24 @@ export default class Scanner extends Component {
   handleError = (err) => {
     console.error(err)
   }
+
+  componentDidUpdate() {
+    if (!this.state.result === "") {
+      this.props.secondUserAdd(this.state.result)
+    }
+  } 
+
+
+
   render(){
     const previewStyle = {
       height: 480,
       width: 640,
     }
-    if (this.state.result === "") {
+    
+   
+
+
     return(
       <div>
         <QrReader
@@ -32,19 +42,10 @@ export default class Scanner extends Component {
           style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
+          facingMode={"front"}
           />
         <h2>{this.state.result}</h2>
       </div>
     )
-  } else {
-    return (           
-     <Route exact
-    path="/shared"
-    render={() => {
-        return <Shared userId={this.state.userId} secondUser={this.state.result} />;
-      }}
-    
-  />
-    )}
-}
+  }
 }
