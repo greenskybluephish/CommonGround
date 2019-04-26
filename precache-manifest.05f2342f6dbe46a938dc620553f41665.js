@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/tests/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "ad56fd968c808db15f57",
+    "revision": "0dfabd69db8b1b7ea842",
     "url": "/tests/static/css/main.deedf536.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/tests/static/js/2.0e779380.chunk.js"
   },
   {
-    "revision": "ad56fd968c808db15f57",
-    "url": "/tests/static/js/main.75172829.chunk.js"
+    "revision": "0dfabd69db8b1b7ea842",
+    "url": "/tests/static/js/main.c7e07fa3.chunk.js"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/tests/static/css/2.2c91e9f2.chunk.css"
   },
   {
-    "revision": "e6a73121f89744ac6513a1e81c33e61a",
+    "revision": "b5a5cb35155e44aabaf31426ad4a3096",
     "url": "/tests/index.html"
   }
 ];
