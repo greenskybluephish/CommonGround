@@ -24,7 +24,7 @@ class Scanner extends Component {
     console.error(err)
   }
 
-  componentWillUpdate() {
+  componentDidUpdate() {
     if (!this.state.result === "") {
       this.props.secondUserAdd(this.state.result)
       
