@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
 import { Route } from "react-router-dom";
+import Shared from "../share/Shared"
 
 export default class Scanner extends Component {
 
