@@ -25,7 +25,7 @@ class Scanner extends Component {
   }
 
   componentWillUpdate() {
-    if (this.state.result !== "") {
+    if (Number.isInteger(parseInt(this.state.result))) {
       this.props.secondUserAdd(this.state.result)
       
     }
