@@ -144,7 +144,7 @@ class ApplicationViews extends Component {
             if (!this.isAuthenticated()) {
               return <Redirect to="/login" />;
             } else {
-              return <Weather userId={this.state.userId} secondUserAdd={this.secondUserAdd}/>;
+              return <Weather {...props} userId={this.state.userId} secondUserAdd={this.secondUserAdd}/>;
             }
           }}
         />
