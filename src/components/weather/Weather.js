@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
 import "./weather.css"
+import { withRouter } from 'react-router'
 
-export default class Scanner extends Component {
+
+class Scanner extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -49,3 +51,5 @@ export default class Scanner extends Component {
     )
   }
 }
+
+export default withRouter(Scanner)
