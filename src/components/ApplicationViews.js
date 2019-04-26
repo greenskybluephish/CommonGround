@@ -68,13 +68,12 @@ class ApplicationViews extends Component {
               username: this.state.currentUser
             };
             API.post.toJSONServer("users", userList)
-            .then(postData => {
-                this.setState({ userId: postData.id });
-                sessionStorage.setItem("userId", postData.id);
-                return postData});
-                return userList
-              }) 
-                .then(postData => {
+            .then(() => {
+              API.get.JSONUsers().then(userArray => {
+                const registeredUser = userArray.find(
+                  user => user.username === this.state.currentUser
+                )
+                this.setState({ userId: registeredUser.id });
                 API.get.spotifyArtistsInfo(postData.artistList, spotify.access_token)
                 .then(page => {
                   let artists = page.artists;
@@ -88,16 +87,17 @@ class ApplicationViews extends Component {
                   return artistDetailObject;
                 }).then(artistArray => {
                   let artistObject = {
-                    userId: parseInt(sessionStorage.getItem("userId")),
+                    userId: parseInt(registeredUser.id),
                     artistDetail: artistArray
                   }
               API.post.toJSONServer("artists", artistObject)
             })
           })
         }
-      });
-    });
+          )});
+    
   };
+})})}
 
   render() {
     return (

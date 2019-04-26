@@ -9,6 +9,11 @@
       "artistList": "33bzrYoIWLx5uox3y0VtHn,2USLUiPGlv1amJy3gUszGw,54SHZF2YS3W87xuJKSvOVf,2w3mdKFSuS2cyXd6ZLYEvs,1sahk8ZhHF9FB59DMyDi8D,1a4N2lwra7WGjwCDJS1Dkk,7mQilAy42MqNPqUFqK4Z0o,3HiuzBlSW7pGDXlSFMhO2g,2gFsmDBM0hkoZPmrO5EdyO,59oA5WbbQvomJz2BuRG071,7N3JfLDzzjXdPbsyco7X0l,1G9G7WwrXka3Z1r7aIDjI7,52NOvMXEjgf8MQl0qop2dl,6WykS91bn7CcqhsnUsoWuX,5Y5Qltdor4sw3O8NnFw5pO,5wbIWUzTPuTxTyG6ouQKqz,0HU0U9kdXEHZVxUNbuQe8S,2IvkS5MXK0vPGnwyJsrEyV,6FxuPrpa8phaP3Xn73emhT,0iOVhN3tnSvgDbcg25JoJb,196lKsA13K3keVXMDFK66q,0b94jN9hNa6rBGfzOcZAMr,13y7CgLHjMVRMDqxdx0Xdo,5eIbEEQnDM8yuDVB0bimSP,6ijT84fUReKCGYV3MjhB2y,7yTltkMBvChBkA86Tz8WfW,3bLSAQPeix7Xm2e5Gtn48R,0hNjIdUHXWhd0dilzi6c12,675tsBPpaZtqyiBwEf3ZEP,0En4EEcDMJ5kaUCf1aZ9js,2ZfHMUPrxoZNDTBPHmmdhj,6LufpoVlIYKQCu9Gjpk8B7,2dU9NlAClSjQtKoVgUQwdz,3GjVVVcFmUgEJEAAsbGkf4,5Bcrb5qQMVTEbJ43fdIS4A,6hnWRPzGGKiapVX1UCdEAC,1rHh0AI30JhKrbzKIFjFNd,5de5W8sgXIMq9dgMR0Wml0,5xLSa7l4IV1gsQfhAMvl0U,7cFHCaii8AgdXSOXVf0lAo,7nXyULtoL8k7wP9l6kg8Ef,3dkbV4qihUeMsqN4vBGg93",
       "username": "Brian",
       "id": 3
+    },
+    {
+      "artistList": "1DB8cszlTpqBsDdVWB349w,5wbIWUzTPuTxTyG6ouQKqz,33bzrYoIWLx5uox3y0VtHn,4TMHGUX5WI7OOm53PqSDAT,196lKsA13K3keVXMDFK66q,56oDRnqbIiwx4mymNEv7dS,02seUFsFQP7TH4hLrTj77o,1dfeR4HaWDbWqFHLkxsg1d,32vWCbZh0xZ4o9gkz4PsEU,2USLUiPGlv1amJy3gUszGw,54SHZF2YS3W87xuJKSvOVf,74ASZWbe4lXaubB36ztrGX,2x9SpqnPi8rlE9pjHBwmSC,7mQilAy42MqNPqUFqK4Z0o,6ijT84fUReKCGYV3MjhB2y,4fXkvh05wFhuH77MfD4m9o,4NZvixzsSefsNiIqXn0NDe,7owr01EP6gwCYjnfQtPKy8,179BpmLkQCRIoU68Co80f5,0k17h0D3J5VfsdmQ1iZtE9,0nJUwPwC9Ti4vvuJ0q3MfT,0b94jN9hNa6rBGfzOcZAMr,2w3mdKFSuS2cyXd6ZLYEvs,4EVpmkEwrLYEg6jIsiPMIb,1YTe4dNIoWX3iHX8H4xVeM,43O3c6wewpzPKwVaGEEtBM,4TKZQfojfl4wUDO3Mql65t,58Dx4HPzeOO3dbpD9YYEes,36QJpDe2go2KgaRleHCDTp,6awzBEyEEwWHOjLox1DkLr,7G1GBhoKtEPnP86X2PvEYO,08GQAI4eElDnROBrJRGE0X,1xHQO9GJIW9OXHxGBISYc5,25oLRSUjJk4YHNUsQXk7Ut,2JRvXPGWiINrnJljNJhG5s,3qwxSif06Qwzykdln8ZGfG,4tZwfgrHOc3mvqYlEYSvVi,5DK8eK7fjvRsziXzyr3sFA,7o7mC95EDbJKTcPAAs8C3r,2RhgnQNC74QoBlaUvT4MEe,1MhtYlJvUqfd2EgHSQTGK4,3WsMAsK03EXFBsOnU34gIx,4hz8tIajF2INpgM0qzPJz2,6v8FB84lnmJs434UJf2Mrm,7t0rwkOPGlDPEhaOcVtOt9,2Hg4SUNDuIn8xIidz9GxFw,0iidQFemlPhkoHqFroz2my,1FlpoZvmdqEMfKIzgMmSJX,2mVVjNmdjXZZDvhgQWiakk,3PhoLpVuITZKcymswpck5b",
+      "username": "chsomerv",
+      "id": 4
     }
   ],
   "artists": [
@@ -483,6 +488,262 @@
         }
       ],
       "id": 3
+    },
+    {
+      "userId": null,
+      "artistDetail": [
+        {
+          "name": "Marco Benevento",
+          "artistId": "1DB8cszlTpqBsDdVWB349w",
+          "image": "https://i.scdn.co/image/d84e3900f5bce671d2f452a34432e3308c926735"
+        },
+        {
+          "name": "Phish",
+          "artistId": "5wbIWUzTPuTxTyG6ouQKqz",
+          "image": "https://i.scdn.co/image/d2ef2af1985a3927e184b267e527a0048682ac42"
+        },
+        {
+          "name": "Greensky Bluegrass",
+          "artistId": "33bzrYoIWLx5uox3y0VtHn",
+          "image": "https://i.scdn.co/image/4766ee771db4c0e7e60a2d013769390c070fba39"
+        },
+        {
+          "name": "Grateful Dead",
+          "artistId": "4TMHGUX5WI7OOm53PqSDAT",
+          "image": "https://i.scdn.co/image/4c000d838221db17a95ec272d79c06560829ab11"
+        },
+        {
+          "name": "The Avett Brothers",
+          "artistId": "196lKsA13K3keVXMDFK66q",
+          "image": "https://i.scdn.co/image/a88a12530f37e001841f4a67a72c925dafec4053"
+        },
+        {
+          "name": "Lizzo",
+          "artistId": "56oDRnqbIiwx4mymNEv7dS",
+          "image": "https://i.scdn.co/image/4f9987e4ab87fc44cb3136b7aea0ec3ad003ccd2"
+        },
+        {
+          "name": "Nathaniel Rateliff & The Night Sweats",
+          "artistId": "02seUFsFQP7TH4hLrTj77o",
+          "image": "https://i.scdn.co/image/f68f7409bf5edeca5b29423b7d086eaf7d29c6f9"
+        },
+        {
+          "name": "Queen",
+          "artistId": "1dfeR4HaWDbWqFHLkxsg1d",
+          "image": "https://i.scdn.co/image/af2b8e57f6d7b5d43a616bd1e27ba552cd8bfd42"
+        },
+        {
+          "name": "Dolly Parton",
+          "artistId": "32vWCbZh0xZ4o9gkz4PsEU",
+          "image": "https://i.scdn.co/image/e2a3d096fbc910e6c2f3beb2c4b2ee5fc6f87c98"
+        },
+        {
+          "name": "Airshow",
+          "artistId": "2USLUiPGlv1amJy3gUszGw",
+          "image": "https://i.scdn.co/image/d1019ccf1f7ea9f987a5d597aeca0cb6523a9db2"
+        },
+        {
+          "name": "Widespread Panic",
+          "artistId": "54SHZF2YS3W87xuJKSvOVf",
+          "image": "https://i.scdn.co/image/1652208493730c0629e5b23802729cf90728c8b7"
+        },
+        {
+          "name": "Bob Dylan",
+          "artistId": "74ASZWbe4lXaubB36ztrGX",
+          "image": "https://i.scdn.co/image/8a192bc60775e48300813c40b9e30aa6a39a925c"
+        },
+        {
+          "name": "Talking Heads",
+          "artistId": "2x9SpqnPi8rlE9pjHBwmSC",
+          "image": "https://i.scdn.co/image/60bfd4ad01d8d9142d88c3c0b73cea36bf327ea7"
+        },
+        {
+          "name": "Umphrey's McGee",
+          "artistId": "7mQilAy42MqNPqUFqK4Z0o",
+          "image": "https://i.scdn.co/image/5e53d110fcdd24e24abe6bb73559d1134cc0bddf"
+        },
+        {
+          "name": "Railroad Earth",
+          "artistId": "6ijT84fUReKCGYV3MjhB2y",
+          "image": "https://i.scdn.co/image/f52205a70f3f411171d31302974c5d78e547aafe"
+        },
+        {
+          "name": "St. Paul & The Broken Bones",
+          "artistId": "4fXkvh05wFhuH77MfD4m9o",
+          "image": "https://i.scdn.co/image/2b5f1017ba52d78f3670b48f491374dee06c2778"
+        },
+        {
+          "name": "Maggie Rogers",
+          "artistId": "4NZvixzsSefsNiIqXn0NDe",
+          "image": "https://i.scdn.co/image/3e5fe8e40f8e7a888ad49a0a235120fad53d5e3d"
+        },
+        {
+          "name": "Delvon Lamarr Organ Trio",
+          "artistId": "7owr01EP6gwCYjnfQtPKy8",
+          "image": "https://i.scdn.co/image/cd8db4334cc53ed413fb6080c9b8f28a8f51b997"
+        },
+        {
+          "name": "Gramatik",
+          "artistId": "179BpmLkQCRIoU68Co80f5",
+          "image": "https://i.scdn.co/image/f3e11befccb8d91242b2253e7e8b460bbe4bffc1"
+        },
+        {
+          "name": "Pink Floyd",
+          "artistId": "0k17h0D3J5VfsdmQ1iZtE9",
+          "image": "https://i.scdn.co/image/d011c95081cd9a329e506abd7ded47535d524a07"
+        },
+        {
+          "name": "John Prine",
+          "artistId": "0nJUwPwC9Ti4vvuJ0q3MfT",
+          "image": "https://i.scdn.co/image/7b294ae73a6d55e848a95f70c8c24f024a99a625"
+        },
+        {
+          "name": "Doom Flamingo",
+          "artistId": "0b94jN9hNa6rBGfzOcZAMr",
+          "image": "https://i.scdn.co/image/2ec7112d722c6807dc86a78c87090a1a8daaceb6"
+        },
+        {
+          "name": "The Werks",
+          "artistId": "2w3mdKFSuS2cyXd6ZLYEvs",
+          "image": "https://i.scdn.co/image/5bdbef36960cce240f1f4b5b727849073a807ace"
+        },
+        {
+          "name": "Fleet Foxes",
+          "artistId": "4EVpmkEwrLYEg6jIsiPMIb",
+          "image": "https://i.scdn.co/image/44b5309c164bb28be7acd2fbcff43d1ff9c9fecb"
+        },
+        {
+          "name": "Jerry Garcia Band",
+          "artistId": "1YTe4dNIoWX3iHX8H4xVeM",
+          "image": "https://i.scdn.co/image/c6c922692e41aa76dc91a2c50f054771e7420847"
+        },
+        {
+          "name": "My Morning Jacket",
+          "artistId": "43O3c6wewpzPKwVaGEEtBM",
+          "image": "https://i.scdn.co/image/f2f7043f9db2eee94a62df3d3ecf929731ec2e35"
+        },
+        {
+          "name": "Blank Range",
+          "artistId": "4TKZQfojfl4wUDO3Mql65t",
+          "image": "https://i.scdn.co/image/f204f76fe951b594877484bdb0e05cc14d652c58"
+        },
+        {
+          "name": "2 LIVE CREW",
+          "artistId": "58Dx4HPzeOO3dbpD9YYEes",
+          "image": "https://i.scdn.co/image/d2e257ad5cb1df27e9cc156354106583a2eeef92"
+        },
+        {
+          "name": "Led Zeppelin",
+          "artistId": "36QJpDe2go2KgaRleHCDTp",
+          "image": "https://i.scdn.co/image/b0248a44865493e6a03832aa89854ada16ff07a8"
+        },
+        {
+          "name": "Girl Talk",
+          "artistId": "6awzBEyEEwWHOjLox1DkLr",
+          "image": "https://i.scdn.co/image/2cbdf3c04f1decf51077f1ddf403e19d3f6d5c20"
+        },
+        {
+          "name": "Nina Simone",
+          "artistId": "7G1GBhoKtEPnP86X2PvEYO",
+          "image": "https://i.scdn.co/image/17e1a4a220372b58694839b09a4121619f4cb1fb"
+        },
+        {
+          "name": "Fleetwood Mac",
+          "artistId": "08GQAI4eElDnROBrJRGE0X",
+          "image": "https://i.scdn.co/image/7316c71bf06332dc259e14ddce420b2b060e9c69"
+        },
+        {
+          "name": "Marian Hill",
+          "artistId": "1xHQO9GJIW9OXHxGBISYc5",
+          "image": "https://i.scdn.co/image/2fe781ee80ff6e1f4e0344432304c97ec2711f83"
+        },
+        {
+          "name": "GRiZ",
+          "artistId": "25oLRSUjJk4YHNUsQXk7Ut",
+          "image": "https://i.scdn.co/image/aaf49aff862a5f124bfffa78fe2c313e87042fb9"
+        },
+        {
+          "name": "The Meters",
+          "artistId": "2JRvXPGWiINrnJljNJhG5s",
+          "image": "https://i.scdn.co/image/126f45bb09f1174ff5a44c986e3b00c33e5a0d5d"
+        },
+        {
+          "name": "Wax Tailor",
+          "artistId": "3qwxSif06Qwzykdln8ZGfG",
+          "image": "https://i.scdn.co/image/791872ddc97d8d2dafdcc3136d8fc9dc0f36b85d"
+        },
+        {
+          "name": "Daft Punk",
+          "artistId": "4tZwfgrHOc3mvqYlEYSvVi",
+          "image": "https://i.scdn.co/image/486fee1d3efda3ff7eeee2016d18f279cae9c77e"
+        },
+        {
+          "name": "Moon Taxi",
+          "artistId": "5DK8eK7fjvRsziXzyr3sFA",
+          "image": "https://i.scdn.co/image/22bff7c28af8c70f3047bd81270f6f1906693ebb"
+        },
+        {
+          "name": "Big Gigantic",
+          "artistId": "7o7mC95EDbJKTcPAAs8C3r",
+          "image": "https://i.scdn.co/image/8cd9626d51df906db8ac75839edf066b45d0ee13"
+        },
+        {
+          "name": "The Growlers",
+          "artistId": "2RhgnQNC74QoBlaUvT4MEe",
+          "image": "https://i.scdn.co/image/0e0dd059ec768272095c29c6843ed9ae2d12b769"
+        },
+        {
+          "name": "Jim James",
+          "artistId": "1MhtYlJvUqfd2EgHSQTGK4",
+          "image": "https://i.scdn.co/image/3b0e8fa8ef0f5a895802fd56bbce0aecec46bb69"
+        },
+        {
+          "name": "Dot.s",
+          "artistId": "3WsMAsK03EXFBsOnU34gIx",
+          "image": "https://i.scdn.co/image/c88e7870433a5da36708251c6778b15f1b1af4be"
+        },
+        {
+          "name": "Rainbow Kitten Surprise",
+          "artistId": "4hz8tIajF2INpgM0qzPJz2",
+          "image": "https://i.scdn.co/image/aebc97797d00ac654f9fbf540ba16c461df59edb"
+        },
+        {
+          "name": "Neil Young",
+          "artistId": "6v8FB84lnmJs434UJf2Mrm",
+          "image": "https://i.scdn.co/image/e708a43997dba966722cf3f1e20c70dabf6d13c4"
+        },
+        {
+          "name": "The Cranberries",
+          "artistId": "7t0rwkOPGlDPEhaOcVtOt9",
+          "image": "https://i.scdn.co/image/a82245ec62ee9606ab456d787f1f7fcd788e6a10"
+        },
+        {
+          "name": "Medeski, Martin & Wood",
+          "artistId": "2Hg4SUNDuIn8xIidz9GxFw",
+          "image": "https://i.scdn.co/image/439d770637e3475457f2ee91a45d15368d825ecf"
+        },
+        {
+          "name": "Delta Rae",
+          "artistId": "0iidQFemlPhkoHqFroz2my",
+          "image": "https://i.scdn.co/image/f97593b8c1a1178393efb99db5627286b156b37f"
+        },
+        {
+          "name": "J. Roddy Walston & The Business",
+          "artistId": "1FlpoZvmdqEMfKIzgMmSJX",
+          "image": "https://i.scdn.co/image/a60347b6b10e1886d1c574a2dbc292be246f9e01"
+        },
+        {
+          "name": "Khruangbin",
+          "artistId": "2mVVjNmdjXZZDvhgQWiakk",
+          "image": "https://i.scdn.co/image/c1f1a8dbf6b5fda1ee8032cd34016ad8ab97c165"
+        },
+        {
+          "name": "Elton John",
+          "artistId": "3PhoLpVuITZKcymswpck5b",
+          "image": "https://i.scdn.co/image/6381c0467a37ad144dff97f716b1d0a3a1e79e56"
+        }
+      ],
+      "id": 4
     }
   ],
   "weather": [],
