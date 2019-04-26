@@ -32,7 +32,6 @@ export default class Scanner extends Component {
           style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
-          facingMode={"rear"}
           />
         <h2>{this.state.result}</h2>
       </div>
