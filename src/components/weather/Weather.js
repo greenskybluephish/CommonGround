@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
- 
+import { Route } from "react-router-dom";
+
 export default class Scanner extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      delay: 100,
-      result: 'No result',
+
+  state = {
+      delay: false,
+      result: ""
     }
  
-    this.handleScan = this.handleScan.bind(this)
-  }
 
-  handleScan(data){
+  handleScan = (data) => {
     this.setState({
       result: data,
     })
   }
-  handleError(err){
+  handleError = (err) => {
     console.error(err)
   }
   render(){
@@ -25,7 +23,7 @@ export default class Scanner extends Component {
       height: 480,
       width: 640,
     }
- 
+    if (this.state.result === "") {
     return(
       <div>
         <QrReader
@@ -38,5 +36,15 @@ export default class Scanner extends Component {
         <h2>{this.state.result}</h2>
       </div>
     )
-  }
+  } else {
+    return (           
+     <Route exact
+    path="/shared"
+    render={() => {
+        return <Shared userId={this.state.userId} secondUser={this.state.result} />;
+      }}
+    
+  />
+    )}
+}
 }

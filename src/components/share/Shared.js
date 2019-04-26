@@ -68,7 +68,7 @@ export default class Shared extends Component {
     API.get
       .JSONArtistDetail(userId)
       .then(array => this.setState({ active: array }));
-    API.get.JSONArtistDetail(3).then(array => this.setState({ second: array }));
+    API.get.JSONArtistDetail(this.props.secondUser).then(array => this.setState({ second: array }));
   }
 
   removeArtist = (event) => {

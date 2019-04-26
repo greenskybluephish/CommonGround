@@ -17,11 +17,11 @@ class NavBar extends Component {
       value: [],
       isOpen: false
    }
-   
+
      handleChange = (event) => {
        this.setState({value: event.target.value});
      }
-   
+
      handleSubmit = (event) => {
        sessionStorage.clear();   
      }
