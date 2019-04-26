@@ -25,6 +25,7 @@ export default class Scanner extends Component {
   componentDidUpdate() {
     if (!this.state.result === "") {
       this.props.secondUserAdd(this.state.result)
+      this.props.history.push("/shared")
     }
   } 
 

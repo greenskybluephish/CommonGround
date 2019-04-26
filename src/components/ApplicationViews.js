@@ -39,7 +39,7 @@ export default class ApplicationViews extends Component {
 
   secondUserAdd = (id) => {
     this.setState({secondUser: id})
-    this.props.history.push("/shared")
+    
   }
 
 
