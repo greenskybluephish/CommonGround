@@ -7,9 +7,9 @@ import API from "../modules/APIManager";
 import "./applicationviews.css";
 import Shared from "./share/Shared"
 import Weather from "./weather/Weather"
+import { withRouter } from 'react-router'
 
-
-export default class ApplicationViews extends Component {
+class ApplicationViews extends Component {
   state = {
     isLoggedIn: false,
     allUsers: [],
@@ -39,7 +39,7 @@ export default class ApplicationViews extends Component {
 
   secondUserAdd = (id) => {
     this.setState({secondUser: id})
-    
+    this.props.history.push("/shared")
   }
 
 
@@ -163,3 +163,5 @@ export default class ApplicationViews extends Component {
     );
   }
 }
+
+export default withRouter(ApplicationViews)

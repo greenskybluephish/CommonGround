@@ -24,10 +24,10 @@ class Scanner extends Component {
     console.error(err)
   }
 
-  componentDidUpdate() {
+  componentWillUpdate() {
     if (!this.state.result === "") {
       this.props.secondUserAdd(this.state.result)
-      this.props.history.push("/shared")
+      
     }
   } 
 
