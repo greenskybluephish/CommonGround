@@ -41,7 +41,6 @@ export default class Shared extends Component {
     const target = event.target.parentNode.parentNode;
     target.classList.add("outFront");
     let image = event.target.previousSibling;
-    const divStyler = styler(image);
     const allArtists = this.state.active.concat(this.state.onlySecond)
     const artistObject = allArtists.find(
       artObject => artObject.artistId === target.id
@@ -49,18 +48,11 @@ export default class Shared extends Component {
     this.setState({ playlist: this.state.playlist.concat(artistObject) });
     setTimeout(function(){ target.classList.add("display-none")}, 2600);
     image.classList.add("outFront");
-    tween({
-      from: 0,
-      to: { x: -1100, y: -1100, rotate: 180 },
-      duration: 2000,
-      ease: easing.backOut,
-      flip: 2
-      // elapsed: 500,
-      // loop: 1,
-      // yoyo: 1
-    }).start(divStyler.set);
+
   }
   };
+
+//this.props.secondUser
 
   componentDidMount() {
     const userId = sessionStorage.getItem("userId");
@@ -68,7 +60,7 @@ export default class Shared extends Component {
     API.get
       .JSONArtistDetail(userId)
       .then(array => this.setState({ active: array }));
-    API.get.JSONArtistDetail(this.props.secondUser).then(array => this.setState({ second: array }));
+    API.get.JSONArtistDetail(2).then(array => this.setState({ second: array }));
   }
 
   removeArtist = (event) => {

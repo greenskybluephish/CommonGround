@@ -4,8 +4,10 @@
   "homepage": "http://greenskybluephish.github.io/tests",
   "private": true,
   "dependencies": {
+    "blk-design-system-react": "file:blk-design-system-react",
     "bootstrap": "^4.3.1",
     "bootstrap-social": "^5.1.1",
+    "formik": "^1.5.4",
     "instascan": "^1.0.0",
     "oauthio-web": "^0.6.2",
     "popmotion": "^8.6.8",

@@ -73,8 +73,9 @@ class ApplicationViews extends Component {
                 const registeredUser = userArray.find(
                   user => user.username === this.state.currentUser
                 )
+                sessionStorage.setItem("userId", registeredUser.id)
                 this.setState({ userId: registeredUser.id });
-                API.get.spotifyArtistsInfo(postData.artistList, spotify.access_token)
+                API.get.spotifyArtistsInfo(userList.artistList, spotify.access_token)
                 .then(page => {
                   let artists = page.artists;
                   const artistDetailObject = artists.map(artist => {
