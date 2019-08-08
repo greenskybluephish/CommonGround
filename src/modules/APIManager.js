@@ -1,7 +1,7 @@
 // const accessToken = window.sessionStorage.getItem("access_token");
 
 const remoteURL = "https://api.spotify.com/v1";
-const baseURL = "http://localhost:5002";
+const baseURL = "https://calm-mesa-57338.herokuapp.com/";
 
 // const spotifyHeaders = {
 //   headers: {
@@ -94,14 +94,14 @@ export default {
     },
 
     async JSONArtistDetail(user) {
-      const res = await fetch(`${baseURL}/users/${user}`);
+      const res = await fetch(`${baseURL}/spotify/${user}`);
       const userObject = await res.json();
       const mappedArtist = userObject.artistDetail
       return mappedArtist;
     },
 
     async JSONUsers() {
-      const res = await fetch(`${baseURL}/users`);
+      const res = await fetch(`${baseURL}/spotify`);
       const resArray = await res.json();
       return resArray;
     },

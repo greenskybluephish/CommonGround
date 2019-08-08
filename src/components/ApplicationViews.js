@@ -69,7 +69,7 @@ class ApplicationViews extends Component {
               artistDetail: array,
               username: this.state.currentUser
             };
-            API.post.toJSONServer("users", userList)
+            API.post.toJSONServer("Spotify", userList)
             .then(() => {
               API.get.JSONUsers().then(userArray => {
                 const registeredUser = userArray.find(
