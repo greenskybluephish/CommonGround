@@ -22,7 +22,7 @@ export default class TopArtists extends Component {
   render() {
     return (
       <Container className="topArtists">
-        <h1>Top Artists</h1>
+        <h1>C31</h1>
         {this.state.artists.map(artist => (
           <ArtistCard key={artist.artistId} artist={artist} />
         ))}

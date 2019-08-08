@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap";
-// import { easing, tween, styler } from "popmotion"
+
 
 export default class ArtistCard extends Component {
   state = {
@@ -15,6 +15,8 @@ export default class ArtistCard extends Component {
   handleSubmit = (event) => {
     this.props.tweener(event)
     }
+asd
+
 
 
   render() {
@@ -33,15 +35,6 @@ export default class ArtistCard extends Component {
               {this.props.artist.name}
             </Button>
 
-          {/* <Popover className="lg"
-            placement="bottom"
-            isOpen={this.state.popoverOpen}
-            target={"a" + this.props.artist.artistId.slice(0, 5)}
-            toggle={this.toggle}
-          >
-            <PopoverHeader>{this.props.artist.name}</PopoverHeader>
-            <PopoverBody>Hello</PopoverBody>
-          </Popover> */}
         </div>
       </div>
     );
