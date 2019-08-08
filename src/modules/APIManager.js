@@ -54,9 +54,30 @@ export default {
       });
       const deviceJSON = await res.json();
       const deviceList = deviceJSON.devices;
-      const phone = deviceList.find(d => d.type === "Smartphone");
+      let phone = deviceList.find(d => d.type === "Smartphone");
+      if (phone === undefined) {
+        phone = {
+          id: "e71d096f1cfb06b079f8156048933dbf5ee78350"
+      }
+    }
       return [phone.id, data];
     },
+    async transferPlayback(deviceId, access_token, data) {
+      const res = await fetch(`https://api.spotify.com/v1/me/player`, {
+        body: JSON.stringify({
+          "device_ids": [
+            deviceId]
+        }), 
+        headers: {
+          Accept: "application/json",
+          Authorization: `Bearer ${access_token}`,
+          "Content-Type": "application/json"
+        },
+        method: "PUT"
+      })
+      return [deviceId, data];
+    },
+
 
     startPhonePlayback(deviceId, access_token, playlist) {
       return fetch(`https://api.spotify.com/v1/me/player/play?device_id${deviceId}`, {

@@ -50,11 +50,13 @@ export default class Shared extends Component {
     const access_token = sessionStorage.getItem("access_token");
     const spotifyId = sessionStorage.getItem("spotifyId");
     const artistsForPlaylist = this.state.playlist.map(p => p.artistId).join();
-    let wait = Promise.all([API.createPlaylist(access_token, spotifyId, "THAT NEW NEW"),
+    let wait = Promise.all([API.createPlaylist(access_token, spotifyId, "Demo Day Playlist"),
     API.get.SpotifyRecs(artistsForPlaylist, access_token)]).then(promise => {
       API.postPlaylistTracks(promise[1], access_token, promise[0]).then(data => {
         API.get.spotifyUserDevices(access_token, data).then(data=> {
-          API.get.startPhonePlayback(data[0], access_token, data[1]);
+          API.get.transferPlayback(data[0], access_token, data[1]).then(data =>{
+            API.get.startPhonePlayback(data[0], access_token, data[1]);
+          })
       })
     });
     });

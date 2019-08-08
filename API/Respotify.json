@@ -699,8 +699,265 @@
       ],
       "username": "Brian",
       "id": 6
+    },
+    {
+      "artistDetail": [
+        {
+          "name": "Emancipator",
+          "artistId": "6HCnsY0Rxi3cg53xreoAIm",
+          "image": "https://i.scdn.co/image/ff84773b8068b2c080c68bc6125c5a91d1fed0d1"
+        },
+        {
+          "name": "slenderbodies",
+          "artistId": "3S4d3YRNGg2OhnNm3QvfhA",
+          "image": "https://i.scdn.co/image/3da1af0171b5b583f100f25a60c868145b15ff4f"
+        },
+        {
+          "name": "Jungle",
+          "artistId": "59oA5WbbQvomJz2BuRG071",
+          "image": "https://i.scdn.co/image/2259d080c0253e726d9b5f47cf5acbb1900d8bb4"
+        },
+        {
+          "name": "Hippo Campus",
+          "artistId": "1btWGBz4Uu1HozTwb2Lm8A",
+          "image": "https://i.scdn.co/image/777433ea9f3d9aa3cf600d67655a16f41cc10fdf"
+        },
+        {
+          "name": "The Polish Ambassador",
+          "artistId": "2dI9IuajQnLR5dLxHjTTqU",
+          "image": "https://i.scdn.co/image/3d05949adf62cf23c47f536dd0b7fea60a78f63d"
+        },
+        {
+          "name": "RÜFÜS DU SOL",
+          "artistId": "5Pb27ujIyYb33zBqVysBkj",
+          "image": "https://i.scdn.co/image/163752f0ffa59e204f1a7b40435b9dfc2c9c48de"
+        },
+        {
+          "name": "Khruangbin",
+          "artistId": "2mVVjNmdjXZZDvhgQWiakk",
+          "image": "https://i.scdn.co/image/c1f1a8dbf6b5fda1ee8032cd34016ad8ab97c165"
+        },
+        {
+          "name": "Glass Animals",
+          "artistId": "4yvcSjfu4PC0CYQyLy4wSq",
+          "image": "https://i.scdn.co/image/f3da11c343f1e6c4f2b525b01c5996dea20542a2"
+        },
+        {
+          "name": "Tame Impala",
+          "artistId": "5INjqkS1o8h1imAzPqGZBb",
+          "image": "https://i.scdn.co/image/b3140c45c6dbd8cffd1929308985552d084adeb9"
+        },
+        {
+          "name": "Lettuce",
+          "artistId": "1fZXjUQEkVbB0TvZX4qFR8",
+          "image": "https://i.scdn.co/image/4bac24077cca55210a149998bd98c68d4a4a8dff"
+        },
+        {
+          "name": "TOOL",
+          "artistId": "2yEwvVSSSUkcLeSTNyHKh8",
+          "image": "https://i.scdn.co/image/92203c0bb48f7f745fb71e7cbfab847dacdebe9e"
+        },
+        {
+          "name": "Tyler Childers",
+          "artistId": "13ZEDW6vyBF12HYcZRr4EV",
+          "image": "https://i.scdn.co/image/05c77688da89cc4cc2388bf98dd374ef5cbd4797"
+        },
+        {
+          "name": "Greensky Bluegrass",
+          "artistId": "33bzrYoIWLx5uox3y0VtHn",
+          "image": "https://i.scdn.co/image/4766ee771db4c0e7e60a2d013769390c070fba39"
+        },
+        {
+          "name": "The Motet",
+          "artistId": "4nEUXGyTWXweCdfVf7f8zN",
+          "image": "https://i.scdn.co/image/afbc370145414600cecf164cbbdc37f02988eb87"
+        },
+        {
+          "name": "ZHU",
+          "artistId": "28j8lBWDdDSHSSt5oPlsX2",
+          "image": "https://i.scdn.co/image/3fdd9be2fe581ecfe8479b3af29f8eb1a06c302d"
+        },
+        {
+          "name": "Turkuaz",
+          "artistId": "699X8OLj9lpNg8rqFdQsA7",
+          "image": "https://i.scdn.co/image/9dfe7492392758776a0050319f5fd6bf7b36c18d"
+        },
+        {
+          "name": "Sylvan Esso",
+          "artistId": "39vA9YljbnOApXKniLWBZv",
+          "image": "https://i.scdn.co/image/2fea08824098d68942c608de7c6ffc0bbded84e8"
+        },
+        {
+          "name": "Daft Punk",
+          "artistId": "4tZwfgrHOc3mvqYlEYSvVi",
+          "image": "https://i.scdn.co/image/486fee1d3efda3ff7eeee2016d18f279cae9c77e"
+        },
+        {
+          "name": "The Postal Service",
+          "artistId": "5yV1qdnmxyIYiSFB02wpDj",
+          "image": "https://i.scdn.co/image/46ac1554fb4e0fae43f3d83f03dc08c517b513f5"
+        },
+        {
+          "name": "Umphrey's McGee",
+          "artistId": "7mQilAy42MqNPqUFqK4Z0o",
+          "image": "https://i.scdn.co/image/361fe5bbf4e4c178046e531a05e18a6fa173380c"
+        },
+        {
+          "name": "Tauk",
+          "artistId": "6qauwCj8W2mTcDGbyDGo6O",
+          "image": "https://i.scdn.co/image/ad5c016bd73bb250432513bcf145dfdafe5f116e"
+        },
+        {
+          "name": "Tycho",
+          "artistId": "5oOhM2DFWab8XhSdQiITry",
+          "image": "https://i.scdn.co/image/a5cea6f0ee3e000f47cf652d97bd85ff9009e700"
+        },
+        {
+          "name": "Young the Giant",
+          "artistId": "4j56EQDQu5XnL7R3E9iFJT",
+          "image": "https://i.scdn.co/image/61e914d1538bf9a0e1869f3e41e649d9b012c60a"
+        },
+        {
+          "name": "Bon Iver",
+          "artistId": "4LEiUm1SRbFMgfqnQTwUbQ",
+          "image": "https://i.scdn.co/image/7f9b8a0f89f5aff5a03861f5b34fb73853ce0fec"
+        },
+        {
+          "name": "Unknown Mortal Orchestra",
+          "artistId": "1LeVJ5GPeYDOVUjxx1y7Rp",
+          "image": "https://i.scdn.co/image/2d152240f9fa5a29f32eb9ea92e368f92ced85d8"
+        },
+        {
+          "name": "Local Natives",
+          "artistId": "75dQReiBOHN37fQgWQrIAJ",
+          "image": "https://i.scdn.co/image/378449aad2dc940141f2b20ed799d3beb9a90803"
+        },
+        {
+          "name": "Vulfpeck",
+          "artistId": "7pXu47GoqSYRajmBCjxdD6",
+          "image": "https://i.scdn.co/image/6c7a630209ec21127f97705c5bce3f75480f2ab8"
+        },
+        {
+          "name": "SunSquabi",
+          "artistId": "1CLLPNftraxuTDyTd6hn3J",
+          "image": "https://i.scdn.co/image/ef1b35fb40dbdd7c668ec3b90d9b0a29c6d5b29d"
+        },
+        {
+          "name": "Joywave",
+          "artistId": "1UfzhwcOR4yfX7yHTPfC9m",
+          "image": "https://i.scdn.co/image/f9eb98355b63b3a46088e74e0e28f939845d9740"
+        },
+        {
+          "name": "The Floozies",
+          "artistId": "5czcqWtwZb5btfWWvWTmgZ",
+          "image": "https://i.scdn.co/image/e0bdc2e4782392334864425ed9e39936748cff68"
+        },
+        {
+          "name": "ODESZA",
+          "artistId": "21mKp7DqtSNHhCAU2ugvUw",
+          "image": "https://i.scdn.co/image/881192d40935946e36d534e24a3df821579c5b83"
+        },
+        {
+          "name": "Tash Sultana",
+          "artistId": "6zVFRTB0Y1whWyH7ZNmywf",
+          "image": "https://i.scdn.co/image/5abc781defd40273e804df4f688c10a1d1262c22"
+        },
+        {
+          "name": "FKJ",
+          "artistId": "2FwDTncULUnmANIh7qKa5z",
+          "image": "https://i.scdn.co/image/05c6086d40bd5bf884044cd257e2b5b08dec8370"
+        },
+        {
+          "name": "X Ambassadors",
+          "artistId": "3NPpFNZtSTHheNBaWC82rB",
+          "image": "https://i.scdn.co/image/272f01a08896d7e01a51f3d298a094038e2d05d1"
+        },
+        {
+          "name": "Moon Boots",
+          "artistId": "3cIXmCH7iNcslTbwrwS7zy",
+          "image": "https://i.scdn.co/image/5d6635093efea70b7edb5c241a02b2f59bf853b8"
+        },
+        {
+          "name": "GRiZ",
+          "artistId": "25oLRSUjJk4YHNUsQXk7Ut",
+          "image": "https://i.scdn.co/image/aaf49aff862a5f124bfffa78fe2c313e87042fb9"
+        },
+        {
+          "name": "Hot Chip",
+          "artistId": "37uLId6Z5ZXCx19vuruvv5",
+          "image": "https://i.scdn.co/image/fc143cc7ae2d970e541348a32d2e56a5ef8038ae"
+        },
+        {
+          "name": "The Black Keys",
+          "artistId": "7mnBLXK823vNxN3UWB7Gfz",
+          "image": "https://i.scdn.co/image/11e05be425a0a64fa65db3deb6f4e2d12f8c04d4"
+        },
+        {
+          "name": "Miike Snow",
+          "artistId": "4l1cKWYW591xnwEGxpUg3J",
+          "image": "https://i.scdn.co/image/e1605db4634aca98dad3f5a3cfa4b2132dd540a1"
+        },
+        {
+          "name": "Virtual Self",
+          "artistId": "0F52YLV7uWqaJfMMDgG737",
+          "image": "https://i.scdn.co/image/23123de725c25a46023fcdec25999b138bf7377e"
+        },
+        {
+          "name": "Franc Moody",
+          "artistId": "10GT4yz8c6xjjnPGtGPI1l",
+          "image": "https://i.scdn.co/image/32c3ada91e7aff25ffddfb166da31ba1a2a4eee9"
+        },
+        {
+          "name": "Coast Modern",
+          "artistId": "4wYk01oPJNfaEssVFL46oQ",
+          "image": "https://i.scdn.co/image/8cab116ab6bc7ebc0e8d9b9f0671d5a1a7711f34"
+        },
+        {
+          "name": "Phish",
+          "artistId": "5wbIWUzTPuTxTyG6ouQKqz",
+          "image": "https://i.scdn.co/image/d2ef2af1985a3927e184b267e527a0048682ac42"
+        },
+        {
+          "name": "Ghost-Note",
+          "artistId": "55BOGnEb0pUuAgbxAwwbKV",
+          "image": "https://i.scdn.co/image/8895f8f5a2379fa9e0c86f0293c5fe62d70e2b3c"
+        },
+        {
+          "name": "BoomBox",
+          "artistId": "3UBLa2huRORV0HmGQq3fGs",
+          "image": "https://i.scdn.co/image/ee176998ce15bbf41dfe627cc53f1dd09ff8ab6f"
+        },
+        {
+          "name": "Rainbow Kitten Surprise",
+          "artistId": "4hz8tIajF2INpgM0qzPJz2",
+          "image": "https://i.scdn.co/image/33156b475081df5f70d2656d121ef0da46b4fc96"
+        },
+        {
+          "name": "Big Wild",
+          "artistId": "0PxzGnCYBpSuaI49OR94cA",
+          "image": "https://i.scdn.co/image/5cb7b553037eccc0a62a5f36149ad15cafabbe12"
+        },
+        {
+          "name": "Cage The Elephant",
+          "artistId": "26T3LtbuGT1Fu9m0eRq5X3",
+          "image": "https://i.scdn.co/image/7f5ffd590188b2801da10516b85853cd778eaef8"
+        },
+        {
+          "name": "Anderson .Paak",
+          "artistId": "3jK9MiCrA42lLAdMGUZpwa",
+          "image": "https://i.scdn.co/image/149b22891cc7b2396247b42ac7a5442199af559b"
+        },
+        {
+          "name": "Modest Mouse",
+          "artistId": "1yAwtBaoHLEDWAnWR87hBT",
+          "image": "https://i.scdn.co/image/cea991a2a018b379be6bf8b2c59dd9ac04095c0d"
+        }
+      ],
+      "username": "1219035984",
+      "id": 7
     }
   ],
   "weather": [],
   "share": []
 }
+
