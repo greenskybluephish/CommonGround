@@ -1,4 +1,4 @@
-.topArtists.container {
+.topArtists.container .content{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

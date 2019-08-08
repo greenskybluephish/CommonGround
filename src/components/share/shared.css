@@ -32,6 +32,7 @@ h1 {
   transition-property: background-color, width, opacity;
   transition-duration: 3s;
   transition-timing-function: linear;
+  max-width: 350px;
 }
 
 .card-body {

@@ -88,10 +88,18 @@ export default class Shared extends Component {
   componentDidMount() {
     const userId = sessionStorage.getItem("userId");
 
+    if (this.props.secondUser == "") {
     API.get
       .JSONArtistDetail(userId)
       .then(array => this.setState({ active: array }));
     API.get.JSONArtistDetail(4).then(array => this.setState({ second: array }));
+    }
+    else {
+      API.get
+      .JSONArtistDetail(userId)
+      .then(array => this.setState({ active: array }));
+    API.get.JSONArtistDetail(this.props.secondUser).then(array => this.setState({ second: array }));
+    }
   }
 
   componentDidUpdate() {
