@@ -15,7 +15,7 @@ export default class ArtistCard extends Component {
   handleSubmit = (event) => {
     this.props.tweener(event)
     }
-asd
+
 
 
 

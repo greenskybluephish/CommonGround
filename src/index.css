@@ -16,4 +16,12 @@ code {
     monospace;
 }
 
+@media screen and (max-width: 600px) {
 
+  #root .container .content{
+    margin-top: 50px;
+  }
+  #root .container .content .card {
+    width: 95%;
+  }
+}

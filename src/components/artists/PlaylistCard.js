@@ -13,17 +13,19 @@ export default class PlaylistCard extends Component {
 
   render() {
     return (
-      <Col className="animated fadeIn flip-card">
-        <div className="flip-card-inner" >
-          <div className="flip-card-front">
-          <img  className= "flip-image" src={this.props.artist.image} alt="artist"></img>
-          </div>
-          <div className="flip-card-back">
-          <h2>{this.props.artist.name}</h2> 
-          <Button id={this.props.artist.artistId} onClick={this.handleClick}>Remove Artist</Button>
-        </div>
-      </div>
-    </Col>
+
+    <div className="card" id={this.props.artist.artistId}>
+    <div className="card-body">
+    <img src={this.props.artist.image}
+        className="card-img"
+        alt="Artist" />
+    <Button name={this.props.artist.artistId} onClick={this.handleClick}>Remove Artist</Button>
+
+    </div>
+  </div>
+
     );
+
+
   }
 }

@@ -52,6 +52,7 @@ class ApplicationViews extends Component {
       // do some stuff with result
       spotify.me().then(data => {
         sessionStorage.setItem("username", data.name);
+        sessionStorage.setItem("spotifyId", data.id);
 
         this.setState({ currentUser: data.name, isLoggedIn: true });
         const registeredUser = this.state.allUsers.find(
@@ -60,11 +61,12 @@ class ApplicationViews extends Component {
         if (registeredUser) {
           this.setState({ userId: registeredUser.id });
           sessionStorage.setItem("userId", registeredUser.id);
-        } else {
+        } 
+        else {
           API.get.spotifyTopArtists(spotify.access_token)
-          .then(string => {
+          .then(array => {
             const userList = {
-              artistList: string,
+              artistDetail: array,
               username: this.state.currentUser
             };
             API.post.toJSONServer("users", userList)
@@ -75,30 +77,8 @@ class ApplicationViews extends Component {
                 )
                 sessionStorage.setItem("userId", registeredUser.id)
                 this.setState({ userId: registeredUser.id });
-                API.get.spotifyArtistsInfo(userList.artistList, spotify.access_token)
-                .then(page => {
-                  let artists = page.artists;
-                  const artistDetailObject = artists.map(artist => {
-                    return {
-                      name: artist.name,
-                      artistId: artist.id,
-                      image: artist.images[1].url
-                    };
-                  });
-                  return artistDetailObject;
-                }).then(artistArray => {
-                  let artistObject = {
-                    userId: parseInt(registeredUser.id),
-                    artistDetail: artistArray
-                  }
-              API.post.toJSONServer("artists", artistObject)
-            })
-          })
-        }
-          )});
-    
-  };
-})})}
+              })})})}})})}
+
 
   render() {
     return (

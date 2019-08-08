@@ -16,16 +16,19 @@ export default class TopArtists extends Component {
     const userId = sessionStorage.getItem("userId");
 
     API.get.JSONArtistDetail(userId)
-      .then(array => this.setState({ artists: array }));
+      .then(object => this.setState({ artists: object}));
   }
 
   render() {
     return (
+      
       <Container className="topArtists">
-        <h1>C31</h1>
+        <h1>Most Listened to Artists</h1>
+        <div className="content">
         {this.state.artists.map(artist => (
           <ArtistCard key={artist.artistId} artist={artist} />
         ))}
+        </div>
       </Container>
     );
   }

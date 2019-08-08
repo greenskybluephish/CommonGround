@@ -16,7 +16,10 @@ export default class Shared extends Component {
     playlist: []
   };
 
-  sharedArtists = () => {
+  sharedArtists = (event) => {
+    const target = event.target.id
+    if (target === "magic") {
+
     const active = this.state.active;
     const second = this.state.second;
     const shared = active.filter(artist =>
@@ -34,7 +37,32 @@ export default class Shared extends Component {
       onlyActive: onlyActive,
       onlySecond: onlySecond
     });
-  };
+    document.getElementById(target).firstChild.textContent = "Make a Playlist";
+    
+    event.target.id = "makePlaylist";
+  } else if (event.target.id === "makePlaylist"){
+      this.makePlaylist();
+    }
+  }
+  
+
+  makePlaylist = () => {
+    const access_token = sessionStorage.getItem("access_token");
+    const spotifyId = sessionStorage.getItem("spotifyId");
+    const artistsForPlaylist = this.state.playlist.map(p => p.artistId).join();
+    let wait = Promise.all([API.createPlaylist(access_token, spotifyId, "THAT NEW NEW"),
+    API.get.SpotifyRecs(artistsForPlaylist, access_token)]).then(promise => {
+      API.postPlaylistTracks(promise[1], access_token, promise[0]).then(data => {
+        API.get.spotifyUserDevices(access_token, data).then(data=> {
+          API.get.startPhonePlayback(data[0], access_token, data[1]);
+      })
+    });
+    });
+  }
+
+
+
+
 
   tweener = event => {
     if (this.state.playlist.length < 5) {
@@ -45,8 +73,9 @@ export default class Shared extends Component {
     const artistObject = allArtists.find(
       artObject => artObject.artistId === target.id
     );  
+
     this.setState({ playlist: this.state.playlist.concat(artistObject) });
-    setTimeout(function(){ target.classList.add("display-none")}, 2600);
+    setTimeout(function(){ target.classList.add("display-none")}, 100);
     image.classList.add("outFront");
 
   }
@@ -60,12 +89,20 @@ export default class Shared extends Component {
     API.get
       .JSONArtistDetail(userId)
       .then(array => this.setState({ active: array }));
-    API.get.JSONArtistDetail(2).then(array => this.setState({ second: array }));
+    API.get.JSONArtistDetail(4).then(array => this.setState({ second: array }));
+  }
+
+  componentDidUpdate() {
+    if (this.state.playlist.length === 5) {
+
+    }
   }
 
   removeArtist = (event) => {
-    const target = event.target.id;
+    const target = event.target.name;
     console.log(target);
+    const addDisplay = document.getElementById(target);
+    addDisplay.classList.remove("display-none", "outFront");
     const newState = this.state.playlist.filter(artistObject => {
       return artistObject.artistId !== target
     }); this.setState({playlist: newState})
@@ -75,9 +112,11 @@ export default class Shared extends Component {
     return (
       <div className="shared">
         <h1>Shared Artists</h1>
-        <Button onClick={this.sharedArtists}>Click to make Magic</Button>
+        <Button id="magic" onClick={this.sharedArtists}>Click to make Magic</Button>
+        <Button id="makePlaylist" onClick={this.makePlaylist}>Click to make Magic</Button>
         
         <Row className="playlist">
+
           {this.state.playlist.map(artist => (
              <PlaylistCard
                 key={artist.artistId}
@@ -85,9 +124,21 @@ export default class Shared extends Component {
                 removeArtist={this.removeArtist}
               />
             ))}
-          </Row>
+            </Row>
+         
+          
          
         <div className="fixer">
+        <div className="container order-sm-1 center ">
+            {this.state.shared.map(artist => (
+              <ArtistCard
+                key={artist.artistId}
+                artist={artist}
+                tweener={this.tweener}
+              />
+            ))}
+          </div>
+
           <div className="container left">
             {this.state.onlyActive.map(artist => (
               <ArtistCard
@@ -97,16 +148,8 @@ export default class Shared extends Component {
               />
             ))}
           </div>
-          <div className="container center">
-            {this.state.shared.map(artist => (
-              <ArtistCard
-                key={artist.artistId}
-                artist={artist}
-                tweener={this.tweener}
-              />
-            ))}
-          </div>
-          <div className="container right">
+
+          <div className="container order-sm-3 right">
             {this.state.onlySecond.map(artist => (
               <ArtistCard
                 key={artist.artistId}

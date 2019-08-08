@@ -23,7 +23,8 @@ class NavBar extends Component {
      }
 
      handleSubmit = (event) => {
-       sessionStorage.clear();   
+       sessionStorage.clear(); 
+       localStorage.clear();  
      }
     
     toggle = () => {
