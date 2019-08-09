@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "./shared.css";
-import { Button, Row, Container } from "reactstrap";
+import { Button, Row, Container, Input } from "reactstrap";
 import API from "../../modules/APIManager";
 import ArtistCard from "../artists/ArtistCard";
-import { easing, tween, styler } from "popmotion";
 import PlaylistCard from "../artists/PlaylistCard";
 
 export default class Shared extends Component {
@@ -15,6 +14,15 @@ export default class Shared extends Component {
     onlySecond: [],
     playlist: []
   };
+
+  handleFieldChange = event => {
+    const stateToChange = {};
+    stateToChange[event.target.id] = event.target.value;
+    this.setState(stateToChange);
+  };
+
+
+
 
   sharedArtists = (event) => {
     const target = event.target.id
@@ -38,7 +46,7 @@ export default class Shared extends Component {
       onlySecond: onlySecond
     });
     document.getElementById(target).firstChild.textContent = "Make a Playlist";
-    
+    document.getElementById("playlistName").classList.remove("display-none");
     event.target.id = "makePlaylist";
   } else if (event.target.id === "makePlaylist"){
       this.makePlaylist();
@@ -49,8 +57,9 @@ export default class Shared extends Component {
   makePlaylist = () => {
     const access_token = sessionStorage.getItem("access_token");
     const spotifyId = sessionStorage.getItem("spotifyId");
+    const playlistName = this.state.playlistName;
     const artistsForPlaylist = this.state.playlist.map(p => p.artistId).join();
-    let wait = Promise.all([API.createPlaylist(access_token, spotifyId, "Demo Day Playlist"),
+    let wait = Promise.all([API.createPlaylist(access_token, spotifyId, playlistName),
     API.get.SpotifyRecs(artistsForPlaylist, access_token)]).then(promise => {
       API.postPlaylistTracks(promise[1], access_token, promise[0]).then(data => {
         API.get.spotifyUserDevices(access_token, data).then(data=> {
@@ -122,8 +131,9 @@ export default class Shared extends Component {
     return (
       <div className="shared">
         <h1>Shared Artists</h1>
-        <Button id="magic" onClick={this.sharedArtists}>Click to make Magic</Button>
-        <Button id="makePlaylist" onClick={this.makePlaylist}>Click to make Magic</Button>
+        <Row>
+        <Button sm={4} id="magic" onClick={this.sharedArtists}>Click to make Magic</Button>
+        <Input sm={4} type="text" onChange={this.handleFieldChange} id="playlistName" className="display-none" placeholder="Name your playlist" /></Row>
         
         <Row className="playlist">
 

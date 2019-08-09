@@ -51,9 +51,9 @@ class NavBar extends Component {
               <NavItem>
                 <NavLink tag={Link} to="/shared">Share</NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink tag={Link} to="/weather">Weather</NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                    <NavLink onClick={this.handleSubmit} tag={Link} to="/login">Log Out</NavLink>
               </NavItem>
