@@ -55,6 +55,12 @@ export default class Shared extends Component {
   
 
   makePlaylist = () => {
+    if (this.state.playlist.length === 0) {
+      return alert("Add 1-5 artists to create your playlist.")
+    }
+
+
+
     const access_token = sessionStorage.getItem("access_token");
     const spotifyId = sessionStorage.getItem("spotifyId");
     const playlistName = this.state.playlistName;
@@ -111,15 +117,9 @@ export default class Shared extends Component {
     }
   }
 
-  componentDidUpdate() {
-    if (this.state.playlist.length === 5) {
-
-    }
-  }
 
   removeArtist = (event) => {
     const target = event.target.name;
-    console.log(target);
     const addDisplay = document.getElementById(target);
     addDisplay.classList.remove("display-none", "outFront");
     const newState = this.state.playlist.filter(artistObject => {

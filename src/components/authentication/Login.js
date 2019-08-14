@@ -18,7 +18,7 @@ class Login extends Component {
   
   }
 
-  handleClick(e) {
+  handleClick = (e) => {
     // Prevents page reload
     e.preventDefault();
 
@@ -33,13 +33,16 @@ class Login extends Component {
 
   render() {
     return (
-    <Container>
+    <Container className="login">
     
-    <h1>Welcome to Common Ground</h1>
-    <h3>Please log in to continue</h3>
-    <Button onClick={this.handleClick.bind(this)} size="lg" bg-color="#E3E0DA" >
-             <span className="fa fa-spotify"></span> Sign in with Spotify
-           </Button>
+    <h1 className="login-heading">Welcome to Common Ground</h1>
+    <h3 className="login-heading">Please log in to continue</h3>
+    <img
+          id="spotify-login"
+          alt="login"
+          src={require(`../../images/320px-Spotify_logo_horizontal_black.jpg`)}
+          onClick={this.handleClick}
+        />
            </Container>
     )}
 }

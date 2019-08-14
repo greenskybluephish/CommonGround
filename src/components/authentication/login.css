@@ -1,15 +1,8 @@
-.login .container {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  min-height: 600px;
-  padding:40px;
-}
 
-h1, h3 {
+h1.login-heading, h3.login-heading {
   margin: 10px;
   text-align: center;
-  width: 100%;
+  height: auto;
 }
 
 button {
@@ -18,4 +11,30 @@ button {
 
 span {
   margin: 5px;
+}
+
+.login.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+flex-wrap: wrap;
+  padding:40px;
+  text-align: center
+}
+
+
+span {
+  margin: 5px;
+}
+
+#spotify-login {
+  width: 240px;
+  border-radius: 4em;
+  margin: 10% auto;
+}
+
+#spotify-login:hover{
+  cursor: pointer;
+  transform: scale(1.225)
 }

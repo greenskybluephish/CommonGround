@@ -24,7 +24,8 @@ class NavBar extends Component {
 
      handleSubmit = (event) => {
        sessionStorage.clear(); 
-       localStorage.clear();  
+       localStorage.clear();
+       this.toggle();  
      }
     
     toggle = () => {
@@ -43,17 +44,15 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
           <Nav navbar>
           <NavItem>
-                <NavLink tag={Link} to="/">Home</NavLink>
+                <NavLink onClick={this.toggle} tag={Link} to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/topartists">Top Artists</NavLink>
+                <NavLink onClick={this.toggle} tag={Link} to="/topartists">Top Artists</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/shared">Share</NavLink>
+                <NavLink onClick={this.toggle} tag={Link} to="/shared">Share</NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink tag={Link} to="/weather">Weather</NavLink>
-              </NavItem> */}
+
               <NavItem>
                    <NavLink onClick={this.handleSubmit} tag={Link} to="/login">Log Out</NavLink>
               </NavItem>

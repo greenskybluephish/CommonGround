@@ -1,7 +1,7 @@
 {
   "name": "respotify",
   "version": "0.1.0",
-  "homepage": "http://greenskybluephish.github.io/tests",
+  "homepage": "http://greenskybluephish.github.io/commonground",
   "private": true,
   "dependencies": {
     "blk-design-system-react": "file:blk-design-system-react",
